@@ -13,3 +13,6 @@ class Post(models.Model):
 		verbose_name = 'blog post'
 		ordering = ['-pub_date', 'title']
 		get_latest_by = 'pub_date'
+
+	def __str__(self):
+		return self.title
