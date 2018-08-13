@@ -1,0 +1,6 @@
+{% for obj in startup %}
+
+<a href="{% url 'startup_detail' obj.slug %}">{{ obj.name }}</a><br>
+{{ obj.description }}<br>
+{{ obj.founded }}<br>
+{% endfor %}

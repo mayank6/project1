@@ -1,0 +1,8 @@
+{{startup.name}}<br>
+{{startup.description}}<br>
+{{startup.founded}}<br>
+{{startup.contact}}<br>
+{{startup.website|urlize}}<br>
+{% for i in startup.tags.all %}<br>
+{{i.name}}
+{% endfor %}

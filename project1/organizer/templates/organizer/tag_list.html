@@ -1,0 +1,5 @@
+{% for i in tag_list %}
+
+<a href="{% url 'tag_detail' i.slug %}">{{ i.name }}</a>
+
+{% endfor %}

@@ -1,0 +1,8 @@
+{% for obj in blogs %}
+<a href="{% url 'blog_detail' obj.pub_date.year obj.pub_date.month obj.slug %}">{{obj.title}}</a>
+{{ obj.pub_date }}
+{{ obj.slug }}
+tags-{% for i in obj.tags.all %}
+{{i.name}}
+{% endfor %}
+{% endfor %}
